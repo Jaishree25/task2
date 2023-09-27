@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+}
+.leftpart {
+  background-color: blueviolet;
+  height: 100vh;
+  width: 45vw;
+  position: relative;
+}
+.rightpart {
+  background-color: rgb(208, 199, 199);
+  height: 100vh;
+  width: 55vw;
+}
+.bubble::after {
+  content: "";
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  position: absolute;
+  top: 20vh;
+  left: 36vw;
+  transform: rotate(90deg);
+  justify-content: center;
+  z-index: 1;
+  width: 19vmax;
+  background-color: #8a2be2;
+  height: 43vmin;
+}
+.bubble::after {
+  background-image: url("svg\ with\ paths.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bubblesecond::after {
+  background-color: #4285f4;
+}
+.bubblethird::after {
+  background-color: #062e6f;
+}
+.bubblefour::after {
+  background-color: #313f54;
+}
+.bubblefive::after {
+  background-color: #0f67ec;
+}
+.bubblesix::after {
+  background-color: #101f91;
+}
+.bubbleseven::after {
+  background-color: #197143;
+}
+.centertext {
+  margin-top: 33vh;
+  z-index: 100;
+  margin-left: 21vw;
+  font-size: 1.5vw;
+  position: absolute;
+}
+
+.leftpartimg {
+  position: absolute;
+  margin-top: 60vh;
+  margin-left: 3vw;
+}
+.imgbelow {
+  position: absolute;
+  margin-top: 74vh;
+  margin-left: 3vw;
+}
+.leftend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 93vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+.rightpart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+}
+.rightsecondpart img {
+  width: 40%;
+}
+.rightfirstpart img {
+  width: 50%;
+}
+.panel {
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .leftpartimg {
+    display: none;
+  }
+  .page3img {
+    display: none;
+  }
+  .rightsecondpart img {
+    width: 45%;
+  }
+  .rightfirstpart img {
+    width: 50%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .leftpart {
+    width: 100%;
+  }
+  .rightpart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1700px) {
+  .bubble::after {
+    display: none;
+  }
+}
